@@ -49,7 +49,7 @@ abstract class Hogwarts {
         if (sumOfCharakteristik1 > sumOfCharakteristik2) {
             System.out.printf(
                     "Студент %s лучше студента %s в Хогвардсе  (%d vs %d), %n",
-                    (java.lang.Object) this.getName(),
+                   this.getName(),
                    hogwarts.getName(),
                    sumOfCharakteristik1,
                    sumOfCharakteristik2
@@ -59,7 +59,7 @@ abstract class Hogwarts {
         if (sumOfCharakteristik1 < sumOfCharakteristik2) {
             System.out.printf(
                     "Студент %s лучше студента %s в Хогвардсе (%d vs %d), %n",
-                    (java.lang.Object) hogwarts.getName(),
+                    hogwarts.getName(),
                     this.getName(),
                     sumOfCharakteristik2,
                     sumOfCharakteristik1
@@ -67,7 +67,7 @@ abstract class Hogwarts {
         } else {
             System.out.printf(
                     "Студенты %s и %s одинаковые в Хогвардсе (%d vs %d), %n %n",
-                    (java.lang.Object) hogwarts.getName(),
+                    hogwarts.getName(),
                     this.getName(),
                     sumOfCharakteristik1,
                     sumOfCharakteristik2
