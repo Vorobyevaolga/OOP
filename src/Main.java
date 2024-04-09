@@ -8,27 +8,27 @@ import java.util.concurrent.ThreadLocalRandom;
 public class Main {
     public static void main(String[] args) {
 
-        Griffendor harry = generatGriffendor("Гарри Потер");
-        Griffendor germiona = generatGriffendor("Гермиона Грейнджер");
-        Griffendor ron = generatGriffendor("Рон Уизли");
-        Kogteran chzhou = generatKogteran("Чжоу Чанг");
-        Kogteran padma = generatKogteran("Падма Патил");
-        Kogteran marcus = generatKogteran("Маркус Белби");
-        Puffenduj zakharia = generatPuffenduj("Захария Смит");
-        Puffenduj sedrik = generatPuffenduj("Седрик Диггори");
-        Puffenduj dzhastin = generatPuffenduj("Джастин Финч");
-        Slizerin darko = generatSlizerin("Драко Малфой");
-        Slizerin graham = generatSlizerin("Грэхэм Монтегю");
-        Slizerin gregory = generatSlizerin("Грегори Гойл");
+        Griffendor harry = generateGriffendor("Гарри Потер");
+        Griffendor germiona = generateGriffendor("Гермиона Грейнджер");
+        Griffendor ron = generateGriffendor("Рон Уизли");
+        Kogteran chzhou = generateKogteran("Чжоу Чанг");
+        Kogteran padma = generateKogteran("Падма Патил");
+        Kogteran marcus = generateKogteran("Маркус Белби");
+        Puffenduj zakharia = generatePuffenduj("Захария Смит");
+        Puffenduj sedrik = generatePuffenduj("Седрик Диггори");
+        Puffenduj dzhastin = generatePuffenduj("Джастин Финч");
+        Slizerin darko = generateSlizerin("Драко Малфой");
+        Slizerin graham = generateSlizerin("Грэхэм Монтегю");
+        Slizerin gregory = generateSlizerin("Грегори Гойл");
         harry.compareTo(ron);
         harry.print();
         ron.print();
         germiona.compareToHogwarts(graham);
         germiona.print();
         graham.print();
-        }
+    }
 
-    private static Griffendor generatGriffendor(String name) {
+    private static Griffendor generateGriffendor(String name) {
         return new Griffendor(name,
                 ThreadLocalRandom.current().nextInt(0, 100),
                 ThreadLocalRandom.current().nextInt(0, 100),
@@ -38,37 +38,38 @@ public class Main {
         );
     }
 
-        private static Kogteran generatKogteran (String name){
-            return new Kogteran(name,
-                    ThreadLocalRandom.current().nextInt(0, 100),
-                    ThreadLocalRandom.current().nextInt(0, 100),
-                    ThreadLocalRandom.current().nextInt(0, 100),
-                    ThreadLocalRandom.current().nextInt(0, 100),
-                    ThreadLocalRandom.current().nextInt(0, 100),
-                    ThreadLocalRandom.current().nextInt(0, 100)
-            );
-        }
-
-        private static Puffenduj generatPuffenduj (String name){
-                return new Puffenduj(
-                        name,
-                        ThreadLocalRandom.current().nextInt(0, 100),
-                        ThreadLocalRandom.current().nextInt(0, 100),
-                        ThreadLocalRandom.current().nextInt(0, 100),
-                        ThreadLocalRandom.current().nextInt(0, 100),
-                        ThreadLocalRandom.current().nextInt(0, 100)
-                );
-            }
-            private static Slizerin generatSlizerin (String name){
-                return new Slizerin(
-                        name,
-                        ThreadLocalRandom.current().nextInt(0, 100),
-                        ThreadLocalRandom.current().nextInt(0, 100),
-                        ThreadLocalRandom.current().nextInt(0, 100),
-                        ThreadLocalRandom.current().nextInt(0, 100),
-                        ThreadLocalRandom.current().nextInt(0, 100),
-                        ThreadLocalRandom.current().nextInt(0, 100),
-                        ThreadLocalRandom.current().nextInt(0, 100)
-                );
-            }
+    private static Kogteran generateKogteran(String name) {
+        return new Kogteran(name,
+                ThreadLocalRandom.current().nextInt(0, 100),
+                ThreadLocalRandom.current().nextInt(0, 100),
+                ThreadLocalRandom.current().nextInt(0, 100),
+                ThreadLocalRandom.current().nextInt(0, 100),
+                ThreadLocalRandom.current().nextInt(0, 100),
+                ThreadLocalRandom.current().nextInt(0, 100)
+        );
     }
+
+    private static Puffenduj generatePuffenduj(String name) {
+        return new Puffenduj(
+                name,
+                ThreadLocalRandom.current().nextInt(0, 100),
+                ThreadLocalRandom.current().nextInt(0, 100),
+                ThreadLocalRandom.current().nextInt(0, 100),
+                ThreadLocalRandom.current().nextInt(0, 100),
+                ThreadLocalRandom.current().nextInt(0, 100)
+        );
+    }
+
+    private static Slizerin generateSlizerin(String name) {
+        return new Slizerin(
+                name,
+                ThreadLocalRandom.current().nextInt(0, 100),
+                ThreadLocalRandom.current().nextInt(0, 100),
+                ThreadLocalRandom.current().nextInt(0, 100),
+                ThreadLocalRandom.current().nextInt(0, 100),
+                ThreadLocalRandom.current().nextInt(0, 100),
+                ThreadLocalRandom.current().nextInt(0, 100),
+                ThreadLocalRandom.current().nextInt(0, 100)
+        );
+    }
+}

@@ -43,6 +43,7 @@ abstract class Hogwarts {
                 System.out.printf("Студенты %s и %s одинаковые на своем факультете (%d vs %d) %n", (java.lang.Object) hogwarts.getName(), this.getName(), sumOfCharakteristik1, sumOfCharakteristik2);
             }
         }
+
     public void compareToHogwarts(Hogwarts hogwarts) {
         int sumOfCharakteristik1 = this.sumOfBaseCharakteristik();
         int sumOfCharakteristik2 = hogwarts.sumOfBaseCharakteristik();

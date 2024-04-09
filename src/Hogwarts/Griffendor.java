@@ -1,6 +1,6 @@
 package Hogwarts;
 
-public class Griffendor extends Hogwarts{
+public class Griffendor extends Hogwarts {
     //Всем Гриффиндорцам присущи благородство, честь и храбрость.
     // умеют колдовать с мощностью в сколько-то баллов и могут трансгрессировать на какое-то расстояние.
     // Гарри Поттер, Гермиона Грейнджер и Рон Уизли
@@ -15,24 +15,41 @@ public class Griffendor extends Hogwarts{
         this.bravery = bravery;
     }
 
-    public int getNobility() {        return nobility;    }
-    public void setNobility(int nobility) {        this.nobility = nobility;    }
-    public int getHonor() {        return honor;    }
-    public void setHonor(int honor) {        this.honor = honor;    }
-    public int getBravery() {        return bravery;    }
-    public void setBravery(int bravery) {        this.bravery = bravery;    }
+    public int getNobility() {
+        return nobility;
+    }
+
+    public void setNobility(int nobility) {
+        this.nobility = nobility;
+    }
+
+    public int getHonor() {
+        return honor;
+    }
+
+    public void setHonor(int honor) {
+        this.honor = honor;
+    }
+
+    public int getBravery() {
+        return bravery;
+    }
+
+    public void setBravery(int bravery) {
+        this.bravery = bravery;
+    }
 
     @Override
     protected int sumOfCharakteristik() {
-        return nobility+honor+bravery;
+        return nobility + honor + bravery;
     }
 
     public void compareTo(Griffendor griffendor) {
-       compareToStudent(griffendor);
+        compareToStudent(griffendor);
     }
 
     @Override
     public String toString() {
-        return super.toString()+" благородство - %d, честь - %d , храбрость- %d.".formatted(nobility, honor, bravery) ;
+        return super.toString() + " благородство - %d, честь - %d , храбрость- %d.".formatted(nobility, honor, bravery);
     }
 }

@@ -59,6 +59,6 @@ public class Kogteran extends Hogwarts {
 
     @Override
     public String toString() {
-        return super.toString()+"ум - %d, мудрость - %d , остроумие - %d, творчество- %d.".formatted(smart, wisdom, wit, creation) ;
+        return super.toString() + "ум - %d, мудрость - %d , остроумие - %d, творчество- %d.".formatted(smart, wisdom, wit, creation);
     }
 }
